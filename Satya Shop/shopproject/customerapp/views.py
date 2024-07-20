@@ -11,7 +11,7 @@ def customerregister(request):
         form = RegistrationForm(request.POST)
         if form.is_valid():
             form.save()
-            return redirect('profile')  # Redirect to profile completion view
+            return redirect('home')  # Redirect to profile completion view
     else:
         form = RegistrationForm()
     return render(request, 'customerreg.html', {'form': form})
