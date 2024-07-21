@@ -4,8 +4,8 @@
     <title>Customer Registration</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f8f9fa;
+            font-family: 'Roboto', sans-serif;
+            background-color: #f3f4f6;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -14,38 +14,51 @@
         }
 
         h1 {
-            color: #333;
+            color: #4a5568;
             text-align: center;
             margin-bottom: 20px;
+            font-size: 2em;
         }
 
         form {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            width: 300px;
-        }
-
-        input, button {
-            display: block;
-            width: calc(100% - 22px); /* Adjust for padding and border */
-            margin: 10px auto;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 3px;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 350px;
             box-sizing: border-box;
         }
 
+        input[type="text"], input[type="email"], input[type="password"], input[type="tel"], select {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #e2e8f0;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 1em;
+        }
+
         button {
-            background-color: #007bff;
-            color: white;
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin: 20px 0;
             border: none;
+            border-radius: 5px;
+            background-color: #3182ce;
+            color: white;
+            font-size: 1em;
             cursor: pointer;
+            transition: background-color 0.3s ease;
         }
 
         button:hover {
-            background-color: #0056b3;
+            background-color: #2b6cb0;
+        }
+
+        label {
+            color: #4a5568;
+            font-weight: bold;
         }
     </style>
 </head>
